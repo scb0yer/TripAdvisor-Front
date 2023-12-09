@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script> -->
+    <script src="./assets/js/main.js"></script>
+    <script src="../back/index.js"></script>
+    <!-- Intégration des pictos -->
+    <script
+      src="https://kit.fontawesome.com/62900f7f49.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Intégration des feuilles css -->
+    <link rel="stylesheet" href="./assets/CSS/reset.css" />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    
+    
+    <!-- Import polices -->
+  </head>
+  <body id="body">
+    <div id="contact-form" class="contact-form hidden">
+      <form>
+        <i id="close" class="fa-solid fa-xmark fa-2xl"></i>
+        <h2>Formulaire de contact</h2>
+        <input
+          name="firstname"
+          type="text"
+          placeholder="Prénom"
+          id="firstname"
+          value=""
+        />
+        <input
+          name="lastname"
+          type="text"
+          placeholder="Nom"
+          id="lastname"
+          value=""
+        />
+        <input
+          name="email"
+          type="email"
+          placeholder="Email"
+          id="email"
+          value=""
+        />
+        <input
+          name="message"
+          type="text"
+          placeholder="Écrivez ici votre message"
+          id="message"
+          value=""
+        />
+        <input type="submit" />
+      </div>
+    </form>
+    <div id="page" class="">
+    <header>
+      <div class="display-flex gap10 jtfy-spce-btwn weight-600">
+        <!-- Logo et barre de recherche -->
+        <div class="display-flex gap10">
+          <span
+            ><img
+              id="logo"
+              class="invisible-xs"
+              src="./assets/img/logo.svg"
+              href="index.html"
+              alt="logo" /><img
+              id="logoXS"
+              class="invisible-large"
+              src="./assets/img/logo-reduced.png"
+              href="index.html"
+          /></span>
+          <div class="search display-flex gap10">
+            <i class="fa-solid fa-magnifying-glass padding-15"></i
+            ><input
+              type="text"
+              class="invisible"
+              name="search"
+              required
+              minlength="4"
+              maxlength="8"
+            />
+          </div>
+        </div>
+        <!-- Pictos + connexion -->
+        <div class="display-flex gap-var align-center jtfy-spce-btwn">
+          <span class="display-flex"
+            ><i class="fa-solid fa-pen align-center padding-var"></i
+            ><a class="button-text" href=""> Avis</a></span
+          >
+          <span class="display-flex"
+            ><i class="fa-solid fa-heart align-center padding-var"></i
+            ><a class="button-text" href=""> Voyages</a></span
+          >
+          <span class="display-flex"
+            ><i class="fa-solid fa-bell align-center padding-var"></i
+            ><a class="button-text" href=""> Alertes</a></span
+          >
+          <button id="contact">Contactez-nous</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="margin">
+      <!-- MENU NAVIGATION -->
+      <h1><span class="font-highlighted">Explorez</span> Paris</h1>
+      <p class="font-xs">
+        Les revenus influencent le choix des expériences présentées sur cette
+        page : en savoir plus.
+      </p>
+      <div
+        class="jtfy-spce-btwn weight-600 display-flex gap10 wrap-m nowrap-xxs"
+      >
+        <div class="colorReversed main-nav-element">
+          Hôtels
+          <div><i class="fa-solid fa-bed"></i></div>
+        </div>
+        <div class="colorReversed main-nav-element">
+          Activités
+          <div><i class="fa-solid fa-ticket"></i></div>
+        </div>
+        <div class="colorReversed main-nav-element">
+          Location de vacances
+          <div><i class="fa-solid fa-house"></i></div>
+        </div>
+        <div class="colorReversed main-nav-element">
+          Restaurants
+          <div><i class="fa-solid fa-utensils"></i></div>
+        </div>
+        <div class="colorReversed main-nav-element">
+          Forums de voyage
+          <div><i class="fa-solid fa-comment-dots"></i></div>
+        </div>
+        <div class="colorReversed main-nav-element">
+          Plus
+          <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+      </div>
+
+      <!-- FLEXBOX 3 IMAGES -->
+      <div class="display-flex flexbox-3">
+        <div class="column1">
+          <img src="./assets/img/caption1.jpg" alt="Photo de voyage" />
+          <img class="TC" src="./assets/img/TC_LL.svg" />
+        </div>
+        <div class="column2 display-flex invisible-xs">
+          <img src="./assets/img/caption2.jpg" alt="Photo de voyage" />
+          <img src="./assets/img/caption3.jpg" alt="Photo de voyage" />
+        </div>
+      </div>
+      <p class="font-xxs">Europe > France > Île-de-France > Paris</p>
+
+      <!-- FLEXBOX À PROPOS -->
+      <section class="display-flex display-block-s">
+        <div class="a-propos display-flex">
+          <h2>À propos de Paris</h2>
+          <p>
+            On dit que Paris est la plus belle ville du monde. Et elle a quelque
+            chose de magique ! Comment résister aux charmes des immeubles
+            haussmanniens en pierre et fer forgé, des trottoirs parsemés de
+            bistrot pittoresques et des rives de la Seine ? Mais Paris, c’est
+            aussi la cuisine : les fins gourmets apprécieront les classiques
+            croissants dorés au beurre et les plats traditionnels comme le coq
+            au vin. Mais les nombreux restaurants de cuisine internationale
+            inventive font aujourd’hui la part belle à la nouvelle scène
+            culinaire française qui mélange les saveurs (les falafels de la rue
+            des Rosiers sont tout simplement à tomber). Laissez-vous aller à la
+            flânerie dans les ruelles cachées, dans les musées renommés et les
+            boutiques spécialisées. À la nuit tombée, rendez-vous sur le
+            Champ-de-Mars pour profiter d'une vue imprenable sur les
+            illuminations de la tour Eiffel.
+          </p>
+        </div>
+        <div class="map display-flex">
+          <div class="display-flex">
+            <div class="font-georgia-30">Paris : commencez à organiser !</div>
+            <div class="font-georgia-20">
+              Créez un voyage pour enregistrer et organiser toutes vos idées et
+              les visualiser sur une carte.
+            </div>
+            <button>Créer un voyage</button>
+          </div>
+          <div><img src="./assets/img/maps_cnuhsr.png" /></div>
+        </div>
+      </section>
+
+      <!-- SECTIONS CARROUSSELS -->
+      <section class="carroussels">
+        <h2>Paris : les immanquables</h2>
+        <div class="display-flex no-wrap">
+          <div>
+            <h3>Que faire</h3>
+            <p>
+              Les endroits emblématiques et les expériences incontournables qui
+              caractérisent cette ville
+            </p>
+            <a href="">Tout afficher</a>
+          </div>
+          <!-- CARROUSSEL 1 -->
+          <div class="carroussel display-flex">
+            <div class="display-flex">
+              <img src="./assets/img/img1.jpg" alt="Photo" />
+              <img class="TCmin" src="./assets/img/top.webp" />
+              <div><i class="fa-regular fa-heart fa-xl"></i></div>
+              <h4>La Tour Eiffel</h4>
+              <div class="rate">
+                <i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i
+                  class="fa-solid fa-circle-half-stroke"
+                  style="color: #11aa6c"
+                ></i>
+              </div>
+              <p class="font-xs">
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+            <div>
+              <img src="./assets/img/img2.jpg" alt="Photo" />
+              <img class="TCmin" src="./assets/img/top.webp" />
+              <div><i class="fa-regular fa-heart fa-xl"></i></div>
+              <h4>Musée du Louvre</h4>
+              <div class="rate">
+                <i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i
+                  class="fa-solid fa-circle-half-stroke"
+                  style="color: #11aa6c"
+                ></i>
+              </div>
+              <p class="font-xs">Bâtiments architecturaux, Musées d'art</p>
+            </div>
+            <div>
+              <img src="./assets/img/img3.jpg" alt="Photo" />
+              <img class="TCmin" src="./assets/img/top.webp" />
+              <div><i class="fa-regular fa-heart fa-xl"></i></div>
+              <h4>Arc de Triomphe</h4>
+              <div class="rate">
+                <i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i
+                  class="fa-solid fa-circle-half-stroke"
+                  style="color: #11aa6c"
+                ></i>
+              </div>
+              <p class="font-xs">Bâtiments architecturaux, sites historiques</p>
+            </div>
+            <div>
+              <img src="./assets/img/img4.jpg" alt="Photo" />
+              <img class="TCmin" src="./assets/img/top.webp" />
+              <div><i class="fa-regular fa-heart fa-xl"></i></div>
+              <h4>Musée Rodin Paris VII</h4>
+              <div class="rate">
+                <i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i
+                  class="fa-solid fa-circle-half-stroke"
+                  style="color: #11aa6c"
+                ></i>
+              </div>
+              <p class="font-xs">Musées spécialisés</p>
+            </div>
+            <div>
+              <img src="./assets/img/img5.jpg" alt="Photo" />
+              <img class="TCmin" src="./assets/img/top.webp" />
+              <div><i class="fa-regular fa-heart fa-xl"></i></div>
+              <h4>Librairie Shakespear and Company Paris V</h4>
+              <div class="rate">
+                <i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i class="fa-solid fa-circle" style="color: #11aa6c"></i
+                ><i
+                  class="fa-solid fa-circle-half-stroke"
+                  style="color: #11aa6c"
+                ></i>
+              </div>
+              <p class="font-xs">Bibliothèques, Grands magasins</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="margin display-flex align-center jtfy-spce-btwn">
+        <div class="display-flex">
+          <img src="./assets/img/logoMin.svg" alt="logo" width="40" />
+          <div>
+            Made at <a href="https://www.lereacteur.io/">Le Reacteur</a> by
+            <a href="https://github.com/scb0yer">Sophie Boyer</a> - 2023
+          </div>
+        </div>
+        <div class="display-flex-s">
+          <select name="devise" class="footer-select" id="devise">
+            <option value="€">€ Euros</option>
+            <option value="$US">$US Dollars américains</option>
+            <option value="£GB">£GB Livres sterling</option>
+            <option value="CHF">CHF Francs suisses</option>
+          </select>
+          <select name="pays" class="footer-select" id="pays">
+            <option value="FR">France</option>
+            <option value="US">United States</option>
+            <option value="IT">Italia</option>
+            <option value="UK">United Kingdom</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>
