@@ -28,12 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const firstname = document.querySelector("#firstname").value;
     const lastname = document.querySelector("#lastname").value;
     const email = document.querySelector("#email").value;
+    const message = document.querySelector("#message").value;
 
     // j'envoie vers mon back ma data =>
     const { data } = await axios.post("http://localhost:3002/form", {
       firstname,
       lastname,
       email,
+      message,
     });
 
     console.log("reponse ====>", data);
